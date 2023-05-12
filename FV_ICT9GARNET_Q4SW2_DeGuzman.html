@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<title>Seatwork 2</title>
+</head>
+
+<br>
+
+<style type="text/css">
+	.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+</style>
+
+<img src="https://static.vecteezy.com/system/resources/previews/009/342/688/original/clock-icon-clipart-design-illustration-free-png.png" style="width: 250px;" class="center">
+
+
+<br>
+
+<body style="background: #f7cecb;">
+<h1 style="text-align: center; color: #804e4a;">Time Converter</h1>
+<h2 style="text-align: center; color: #804e4a;">Let us convert time!!</h2>
+	<div class="container" style="background-color: #d4fcf6 ">
+		<table class="table">
+		<tr>
+		<th style="text-align: center;">
+			<h2 style="color: #6b4545;">Seconds</h2>
+			<p><input type="text" id="seconds"></p>
+			<input type="button" class="btn btn-danger" onClick="Secondsminutes()" value="To Minutes">
+			<input type="button" class="btn btn-danger" onClick="Secondshours()" value="To Hours">
+			<input type="button" class="btn btn-danger" onClick="Secondsdays()" value="To Days">
+		</th>
+
+		<th style="text-align: center;">
+			<h2 style="color: #6b4545">Minutes</h2>
+			<p><input type="text" id="minutes"></p>
+			<input type="button" class="btn btn-danger" onClick="Minutesseconds()" value="To Seconds">
+			<input type="button" class="btn btn-danger" onClick="Minuteshours()" value="To Hours">
+			<input type="button" class="btn btn-danger" onClick="Minutesdays()" value="To Days">
+		</th>
+	</tr>
+</table>
+		<table class="table">
+			<tr>
+		<th style="text-align: center;">
+			<h2 style="color: #6b4545">Hours</h2>
+			<p><input type="text" id="hours"></p>
+			<input type="button" class="btn btn-danger" onClick="Hoursseconds()" value="To Seconds">
+			<input type="button" class="btn btn-danger" onClick="Hoursminutes()" value="To Minutes">
+			<input type="button" class="btn btn-danger" onClick="Hoursdays()" value="To Days">
+		</th>
+		<th style="text-align: center;">
+			<h2 style="color: #6b4545">Days</h2>
+			<p><input type="text" id="days"></p>
+			<input type="button" class="btn btn-danger" onClick="Daysseconds()" value="To Seconds">
+			<input type="button" class="btn btn-danger" onClick="Daysminutes()" value="To Minutes">
+			<input type="button" class="btn btn-danger" onClick="Dayshour()" value="To Hours">
+		</th>
+	</tr>
+</table>
+</div>
+</body>
+
+<script type="text/javascript">
+/*SECONDS*/
+	function Secondsminutes(){
+		let x = (document.getElementById('seconds').value);
+		let y = 60;		
+		alert(x / y);
+	}
+	function Secondshours(){
+		let x = (document.getElementById('seconds').value);
+		let y = 3600;		
+		alert(x / y);
+	}
+
+	function Secondsdays(){
+		let x = (document.getElementById('seconds').value);
+		let y = 86400;		
+		alert(x / y);
+	}
+/*MINS*/
+	function Minutesseconds(){
+		let x = (document.getElementById('minutes').value);
+		let y = 60;		
+		alert(x * y);
+	}
+	function Minuteshours(){
+		let x = (document.getElementById('minutes').value);
+		let y = 60;		
+		alert(x / y);
+	}
+	function Minutesdays(){
+		let x = (document.getElementById('minutes').value);
+		let y = 1440;		
+		alert(x / y);
+	}
+/*HOURS*/
+function Hoursseconds(){
+		let x = (document.getElementById('hours').value);
+		let y = 3600;		
+		alert(x * y);
+	}
+	function Hoursminutes(){
+		let x = (document.getElementById('hours').value);
+		let y = 60;		
+		alert(x * y);
+	}
+	function Hoursdays(){
+		let x = (document.getElementById('hours').value);
+		let y = 24;		
+		alert(x / y);
+	}
+/*DAYS*/
+function Daysseconds(){
+		let x = (document.getElementById('days').value);
+		let y = 86400;		
+		alert(x * y);
+	}
+	function Daysminutes(){
+		let x = (document.getElementById('days').value);
+		let y = 1440;		
+		alert(x * y);
+	}
+	function Dayshour(){
+		let x = (document.getElementById('days').value);
+		let y = 24;		
+		alert(x * y);
+	}
+</script>
+</html>
